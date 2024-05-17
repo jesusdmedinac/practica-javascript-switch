@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <script>
+
+            function mostrarMensaje1(){
+
+                var numeroMesComoString = prompt("Selecciona un mes del 1 al 12");
+
+                let meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+                if(numeroMesComoString !== null){
+
+                    var mesComoEntero = parseInt(numeroMesComoString);
+
+                    switch (mesComoEntero) {
+                        case 1:
+                            mensaje = "enero";
+                            break;
+                        case 2:
+                            mensaje = "febrero";
+                            break;
+                        case 3:
+                            mensaje = "marzo";
+                            break;
+                        case 4:
+                            mensaje = "abril";
+                            break;
+                        case 5:
+                            mensaje = "mayo";
+                            break;
+                        case 6:
+                            mensaje = "junio";
+                            break;
+                        case 7:
+                            mensaje = "julio";
+                            break;
+                        case 8:
+                            mensaje = "agosto";
+                            break;
+                        case 9:
+                            mensaje = "septiembre";
+                            break;
+                        case 10:
+                            mensaje = "octubre";
+                            break;
+                        case 11:
+                            mensaje = "noviembre";
+                            break;
+                        case 12:
+                            mensaje = "diciembre";
+                            break;
+                        default:
+                            mensaje = "El número ingresado no corresponde a un mes válido.";
+                    }
+
+                    alert("El mes seleccionado es: " + mensaje);
+                }
+            }
+            
+            </script>
+    </head>
+    <body>
+        <button onclick="mostrarMensaje1()">Mostrar mensaje</button>
+    </body>
+</html>
+    
